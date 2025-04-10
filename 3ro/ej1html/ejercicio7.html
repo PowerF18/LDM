@@ -2,52 +2,78 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ejercicio 7 formulario</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Santiago García">
+    <meta name="keywords" content="html, formulario, ejemplo">
+    <title>Ejercicio 7</title>
 </head>
 
 <body>
-    <form>
-        <label for="nombreForm">Nombre:</label>
-        <input type="text" name="nombreForm" id="nombreForm"  autofocus tabindex="1"/>
-        <br></br>
+    <div>
+        <form action="ejercicio7.html" method="get">
 
-        <label for="emailForm">Correo electrónico:</label>
-        <input type="email" name="emailForm" id="emailForm" tabindex="2"/>
-        <br></br>
+            <p>
+                <label for="nombreForm">Nombre:</label>
+                <input type="text" name="nombreForm" id="nombreForm" autofocus tabindex="1" placeholder="Santiago García" />
+            </p>
+            <p>
+                <label for="emailForm">Correo electrónico:</label>
+                <input type="email" name="emailForm" id="emailForm" tabindex="2" placeholder="sanboh04@gmail.com" />
+            </p>
+            <p>
+                <label for="urlForm">URL:</label>
+                <input type="url" name="urlForm" id="urlForm" tabindex="3" placeholder="URL" />
+            </p>
+            <p>
+                <label for="fechaForm">Fecha:</label>
+                <input type="date" name="dateForm" id="dateForm" tabindex="4" value="ff" />
+            </p>
+            <p>
+                <label for="generoForm">Genero:</label>
+                <input type="radio" name="Sexo" id="radioHombre" tabindex="5" value="gf1" />
+                <label for="radioHombre">Hombre</label>
+                <input type="radio" name="Sexo" id="radioMujer" tabindex="6" value="gf2" />
+                <label for="radioMujer">Mujer</label>
+            </p>
+            <p>
+                <label for="hijosForm">Número de hijos:</label>
 
-        <label for="urlForm">URL:</label>
-        <input type="url" name="urlForm" id="urlForm" tabindex="3"/>
-        <br></br>
+                <input type="radio" name="hijos1" id="hijosForm" tabindex="7" value="hf1" />
+                <label for="hijos1">Ninguno</label>
 
-        <label for="fechaForm">Fecha:</label>
-        <input type="date" name="dateForm" id="dateForm" tabindex="4"/>
-        <br></br>
+                <input type="radio" name="hijos2" id="hijosForm" tabindex="8" value="hf2" />
+                <label for="hijos2">Uno</label>
 
-        <label for="generoForm">Genero:</label>
-        <input type="radio" name="Sexo" id="radioHombre" tabindex="5"/>
-        <label for="radioHombre">Hombre</label>
-        <input type="radio" name="Sexo" id="radioMujer" tabindex="6"/>
-        <label for="radioMujer">Mujer</label>
-        <br></br>
+                <input type="radio" name="hijos3" id="hijosForm" tabindex="9" value="hf3" />
+                <label for="hijos3">Dos</label>
 
-        <label for="hijosForm">Número de hijos:</label>
+                <input type="radio" name="hijos4" id="hijosForm" tabindex="10" value="hf4" />
+                <label for="hijos4">Más de dos</label>
 
-        <input type="radio" name="hijos1" id="hijosForm" tabindex="7"/>
-        <label for="hijos1">Ninguno</label>
+            </p>
+            <p>
+                <label for="numeroForm">Numero entre -10 y 10:</label>
+                <input type="number" name="numeroForm" id="numeroForm" max="10" min="-10" tabindex="11"
+                    placeholder="Número" value="numf" />
+            </p>
+            <p>
+                <label for="telfForm">Teléfono:</label>
+                <input type="tel" name="telfForm" id="telfForm" tabindex="12" placeholder="Teléfono" />
+            </p>
+            <p>
+                <label for="busquedaForm">Término de búsqueda: </label>
+                <input type="text" name="busquedaForm" id="busquedaForm" tabindex="13" placeholder="11817571" />
+            </p>
+            <p>
+                <label for="colorForm">Color favorito: </label>
+                <input type="color" name="colorForm" id="colorForm" tabindex="14" value="cf" />
+            </p>
+            <input type="submit" value="Subir" tabindex="15" />
+            </p>
+        </form>
+    </div>
 
-        <input type="radio" name="hijos2" id="hijosForm" tabindex="8"/>
-        <label for="hijos2">Uno</label>
-
-        <input type="radio" name="hijos3" id="hijosForm" tabindex="9"/>
-        <label for="hijos3">Dos</label>
-
-        <input type="radio" name="hijos4" id="hijosForm" tabindex="10"/>
-        <label for="hijos4">Más de dos</label>
-        
-        <br></br>
-    </form>
 </body>
 
 </html>
